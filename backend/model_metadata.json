@@ -1,0 +1,44 @@
+{
+  "trained_at": "2026-04-05T19:45:52.236134+00:00",
+  "num_samples": 20000,
+  "algorithm": "GradientBoostingClassifier",
+  "n_estimators": 200,
+  "learning_rate": 0.08,
+  "max_depth": 5,
+  "test_accuracy": 0.8545,
+  "cv_accuracy_mean": 0.8459,
+  "cv_accuracy_std": 0.0045,
+  "feature_columns": [
+    "time_of_day",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week",
+    "is_weekend",
+    "is_rush_hour",
+    "is_late_night",
+    "weather",
+    "weather_severity",
+    "road_type",
+    "road_capacity",
+    "weather_rush_interaction"
+  ],
+  "label_classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "feature_importances": {
+    "time_of_day": 0.076028,
+    "hour_sin": 0.053848,
+    "hour_cos": 0.21899,
+    "day_of_week": 0.042863,
+    "is_weekend": 0.020939,
+    "is_rush_hour": 0.148565,
+    "is_late_night": 0.131597,
+    "weather": 0.083993,
+    "weather_severity": 0.061575,
+    "road_type": 0.026392,
+    "road_capacity": 0.031962,
+    "weather_rush_interaction": 0.103249
+  }
+}
